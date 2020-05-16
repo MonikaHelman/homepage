@@ -1,27 +1,140 @@
 body {
-    background: #F2EFEA;
-}
-.header {
-    background: rgb(180, 179, 177);
+  background: #f2efea;
+  box-sizing: border-box;
 }
 
-.main-heading {
-    color: #4D6D9A;
+main {
+  max-width: 1000px;
+  margin: 20px auto;
+  text-align: justify;
+  box-sizing: border-box;
 }
 
-.secondary-heading {
-    color: #FE938C;
+
+/* --------------------------------------------styles for navigation——————------------------------—————*/
+
+.navigation {
+  background-color: #f2efea;
+  border: 2px solid #28233f;
+  height: 50px;
+  width: 100%;
+  margin: 0px;
+  position: fixed;
+  z-index: 1;
+  top: 0px;
+  box-sizing: border-box;
 }
-.third-heading {
-    color: #5F6366;
+.navigation__link {
+  color: #160309;
+  text-decoration: none;
+  padding: 15px 20px;
+  float: right;
 }
-img {
-    max-width: 50vw;
-    height: 200px;
-}   
-.linkNavigation {
-    text-decoration: none;
-    color: #022F40;
-    font-weight: bold;
+a:hover {
+  background-color: rgb(98, 137, 173, 0.8);
 }
+
+/* -----------------------------------------styles for hero section————————-----------------------———*/
+
+.hero {
+  background-image: url(images/hero-image.jpg);
+  min-height: 600px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  margin: 0px;
+  position: relative;
+}
+
+.hero__title-1 {
+  position: absolute;
+  top: 15vh;
+  left: 35vw;
+  color: #f2efea;
+  font-size: 40px;
+}
+.hero__title-2 {
+  position: absolute;
+  top: 20vh;
+  left: 39vw;
+  margin-top: 10px;
+  padding: 10px;
+  color: #f2efea;
+  font-size: 20px;
+}
+.hero__description {
+  position: absolute;
+  top: 25vh;
+  left: 40vw;
+  padding: 10px;
+  margin-top: 10px;
+  color: #f2efea;
+  font-size: 20px;
+}
+/*-----------------------------------------page index.html-------------------------*/
+
+.main__heading {
+  color: #160309;
+  
+}
+
+.list__item {
+  font-weight: bold;
+  list-style-type: none;
+  border: solid 1px #28233f;
+  border-radius: 5px;
+  padding: 10px;
+  margin-bottom: 10px;
+  margin-right: 10px;
+  float: right;
+  max-width: 440px;
+}
+
+.sublist__item {
+  font-weight: normal;
+}
+.sublist__item:hover {
+  color: rgb(98, 137, 173, 0.8);
+}
+
+/*----------------------------------------page links.html--------------------------*/
+
+.article__link {
+  text-decoration: none;
+  color: #28233f;
+  font-weight: bold;
+}
+
+.article__container {
+  border: solid 1px #28233f;
+  border-radius: 5px;
+  padding: 10px;
+  margin-bottom: 10px;
+  margin-right: 10px;
+}
+
+/*-----------------------------------------page notes.html-------------------*/
+
+.week__heading {
+  border: solid 1px #28233f;
+  border-radius: 5px;
+  padding: 10px;
+  background-color: rgb(98, 137, 173, 0.8);
+  position: sticky;
+  top: 10px;
+  display: inline-block;
+}
+
+.article__heading {
+  text-decoration: underline;
+  color: rgb(98, 137, 173, 0.8);
+}
+
+/*----------------------------------------footer-------------------------------*/
+footer {
+  text-align: center;
+  clear: both;
+}
+footer a {
+  text-decoration: none;
+  color: #28233f;
 }
